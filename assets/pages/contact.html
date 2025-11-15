@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia</title>
+
+    <!--cambio de letra o enlazar-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--enlazar lo que es el gogle font cambio de letra-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- enlazar el html en la libreria para los logitipos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--enlazar  hmtl el favicon-->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="topbar">
+        <div class="container">
+            <div class="topbar-main">
+                <div class="topbar-contact">
+                    <a href="tel: +51 947895242">
+                        <i class="fa-solid fa-mobile"></i>
+                        (+51) 947 895 242
+                    </a>
+                    <a href="mailto:contactatos@Barbershop.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        contactos@Barbershop.com
+                    </a>
+                </div>
+                <div class="topbar-social">
+                    <a href="social.html" targert="_self">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="social.html" targert="_self">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="social.html" targert="_self">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="social.html" target="_self">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="social.html" target="_self">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <header class="header padding-sm">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <a href="../../index.html">
+                    <img class="img-fluid" src="../img/Proyecto nuevo.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Botón Hamburguesa -->
+                <div class="menu-toggle">
+                    <!-- Icono de font awesone -->
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- barra de menu -->
+                <div class="nav-menu">
+                    <a class="nav-menu-link" href="../../index.html">HOME</a>
+                    <a class="nav-menu-link" href="about.html">ABOUT</a>
+                    <a class="nav-menu-link" href="service.html">SERVICE</a>
+                    <a class="nav-menu-link" href="pages.html">PAGES</a>
+                    <a class="nav-menu-link nav-link-active" href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <div class="page-title-main">Contact</div>
+                <div>
+                    <a class="nav-menu-link col-30" href="../../index.html">Home</a> / Contact
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-x1 form-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-95 padding-sm">
+                        <video class="video-fluid" autoplay muted loop>
+                            <source src="../video/bucle1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="col col-95 padding-sm">
+                        <h2 class="padding-sm">Hacer reserva</h2>
+
+                        <form action="registrar.php" method="post">
+                            <!-- Flexbox para el diseño del formulario -->
+                            <div class="row">
+                                <div class="col col-50">
+                                    <input class="form-control" type="text" id="nombre" name="nombre" required
+                                        placeholder="Nombre">
+                                </div>
+
+                                <div class="col col-50">
+                                    <input class="form-control" type="email" id="correo" name="correo" required
+                                        placeholder="Correo">
+                                </div>
+
+                                <div class="col col-50">
+                                    <input class="form-control" type="date" id="date" name="date" required
+                                        placeholder="Date">
+                                </div>
+
+                                <div class="col col-50">
+                                    <input class="form-control" type="time" id="time" name="time" required
+                                        placeholder="Time">
+                                </div>
+
+                                <div class="col col-50">
+                                    <select class="form-control">
+                                        <option value="Seleccionar servicio">Seleccionar servicio</option>
+                                        <option value="Corte de cabello">Corte de cabello</option>
+                                        <option value="Corte de niños">Corte de niños</option>
+                                        <option value="Recorte de barbas">Recorte de barbas</option>
+                                        <option value="Corte con diseño">Corte con diseño</option>
+                                        <option value="Mascarilla facial">Mascarilla facial</option>
+                                        <option value="Pintado">Pintado</option>
+                                    </select>
+                                </div>
+
+                                <div class="col col-50">
+                                    <select class="form-control">
+                                        <option value="Seleccionar barbero">Seleccionar barbero</option>
+                                        <option value="Jesus">Fulano</option>
+                                        <option value="Eduardo">Sutano</option>
+                                        <option value="Axel">Mengano</option>
+                                    </select>
+                                </div>
+
+                                <div class="col col-100 padding-formulario">
+                                    <button class="form-submit" type="submit">Realizar Reserva <i
+                                            class="fa-solid fa-paper-plane"></i> </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service4 padding-x10"></section>
+        <section class="form-color padding-x1">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-40 padding-sm">
+                        <h2>INGRESA A NUESTRA LISTA DE CORREOS</h2>
+                    </div>
+                    <div class="col col-60 padding-sm">
+                        <form action="registrar.php" method="post">
+                            <!-- Flexbox para el diseño del formulario -->
+                            <div class="row">
+                                <div class="col col-90">
+                                    <div class="email-box">
+                                        <input class="form-control" type="email" id="correo" name="correo" required
+                                            placeholder="Correo">
+                                        <button class="form-submit" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer padding-sm">
+        <div class="container">
+            <span>&copy; 2025 Multivisión - Todos los derechos reservados</span>
+        </div>
+    </footer>
+
+    <!-- Botón scroll-up -->
+    <a href="contact.html" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <!-- Enlace codigo JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

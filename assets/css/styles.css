@@ -1,0 +1,662 @@
+/* variables css para el uso general */
+:root {
+   /* variables para paleta de colores  */
+   --color0: #ffe5cd;
+   --color1: #212529;
+   /*color negro*/
+   --color2: #FFFFFF;
+   /* color blanco*/
+   --color3: #4A4A4a;
+   /*color gris oscuro*/
+   --color4: #E5A872;
+   /*color piel oscuro*/
+
+   /* variable para tipo fuente  */
+   --fuente1: "Exo 2", sans-serif;
+}
+
+/* selector universal para afectar todos los elementos  */
+* {
+   /* quitar los espacios prederterminados */
+   padding: 0;
+   margin: 0;
+}
+
+/* selectores de estilo  de tipo  etiqueta HTML */
+html {
+   /* valor por defecto del rem  */
+   font-size: 16px;
+   scroll-behavior: smooth;
+}
+
+h1 {
+   font-size: 36px;
+}
+
+h2 {
+   font-size: 30px;
+   letter-spacing: 3px;
+}
+
+h3 {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+body {
+   font-family: var(--fuente1);
+   line-height: 1.8;
+}
+
+/* selectores  de estilo de tipo class */
+
+.container {
+   max-width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container2 {
+   padding: 100px 50px;
+}
+
+.padding-sm {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.padding-1{
+   margin-top: -35px;
+   margin-bottom: -35px;
+}
+
+.padding-x0{
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.padding-x1 {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.padding-x2{
+   padding-top: 150px;
+   padding-bottom: 60px;
+}
+
+.padding-x10{
+   padding: 200px;
+   margin-bottom: -250px;
+}
+
+.header {
+    background-color: var(--color1);
+    color: var(--color2);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.about {
+   display: flex;
+}
+
+.service {
+   background-color: var(--color2);
+   color: var(--color3);
+}
+
+.service2 {
+   background-color: var(--color2);
+   color: var(--color4);
+}
+
+.service4 {
+   background-color: var(--color0);
+   color:   var(--color1);
+}
+
+.footer {
+   background-color: var(--color1);
+   color: var(--color2);
+}
+
+.nav-bar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-logo {
+   width: 120px;
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Oculta el botón hamburguesa */
+}
+
+.nav-menu {
+   display: flex;
+   /*gap:1rem*/
+}
+
+.nav-menu-link {
+   color: var(--color2);
+   text-decoration: none;
+   /*quitar el subrayado */
+   display: block;
+   padding: 5px 15px;
+   transition: all 0.4s ease-in-out;
+}
+
+.nav-menu-link:hover {
+   color: var(--color2);
+   background-color: var(--color4);
+}
+
+.nav-link-active {
+      background-color: var(--color4) !important;
+      color: var(--color2) !important;
+    }
+
+.video-fluid {
+   width: 100%;
+   aspect-ratio: 16 / 9;
+   display: block;
+}
+
+.img-fluid {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* estilos para flebox */
+.row {
+   display: flex;
+   /*Activa flexbox*/
+   flex-direction: row;
+   /* orientacion en fila */
+   flex-wrap: wrap;
+   /* flexbox multifila*/
+
+   /*corrige los espacios  de la primera  y ultima caja */
+   margin-left: -15px;
+   margin-right: -15px;
+
+}
+
+/* comfigura las columnas con el mismo ancho en una sola fila */
+.col {
+   flex-grow: 1;
+   flex-basis: 0;
+   /* espacio entre columnas */
+   padding-left: 15px;
+   padding-right: 15px;
+
+   /*evita  que se modifique  el tamaño  original de la caja */
+   box-sizing: border-box;
+}
+
+.col-30{
+   max-width: 30%;
+   flex-basis: 30%;
+}
+
+.col-50 {
+   max-width: 50%;
+   flex-basis: 50%;
+}
+
+.col-60 {
+   max-width: 60%;
+   flex-basis: 60%;
+}
+
+.button-service {
+   background-color: var(--color4);
+   color: var(--color2);
+   padding: 20px 20px;
+   border: none;
+   font: inherit;
+   cursor: pointer;
+}
+
+.table-size {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.table-caption {
+   color: var(--color1);
+   font-size: 20px;
+   font-weight: bold;
+   text-align: left;
+   margin-bottom: 15px;
+}
+
+.table td {
+   border: 1px solid var(--color3);
+   padding: 10px;
+   text-align: center;
+}
+
+.table thead {
+   background-color: var(--color4);
+   color: var(--color2);
+}
+/* Nuevos para formulario */
+
+.form-control {
+   display: block;
+   width: 100%;
+   padding: 10px 5px;
+   margin-bottom: 10px;
+   font: inherit;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid var(--color1);
+}
+
+.form-submit {
+   background-color: var(--color1);
+   color: var(--color2);
+   padding: 10px 20px;
+   font: inherit;
+   border: none;
+   margin-top: 10px;
+   cursor: pointer;
+   transition: all 0.4s ease-in-out;
+}
+
+.col-40 {
+   max-width: 40%;
+   flex-basis: 40%;
+}
+
+.col-95 {
+   max-width: 95%;
+   flex-basis: 95%;
+}
+
+.padding-formulario {
+   padding-top: 10px;
+}
+
+.form-color {
+   width: 100%;
+   background-color: var(--color4);
+   box-sizing: border-box;
+   margin-top: -5px;
+   margin-bottom: -5px;
+   flex: 1;
+}
+
+.topbar {
+   background-color: var(--color2);
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 0.8rem;
+}
+
+.topbar a {
+   color: var(--color3);
+   text-decoration: none;
+   margin-right: 10px;
+}
+
+.topbar-main {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.video-promoción {
+   background-color: var(--color1);
+   color: var(--color2);
+}
+
+.page-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(90deg,rgb(86, 72, 52) 0%, rgba(32, 36, 70, 0.6) 50%), url("../img/quienesSomos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--color2);
+}
+
+.page-title-main {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--color2);
+}
+
+.video-caja-padre{
+ position:relative;
+}
+
+.video-caja-hijo{
+   position: absolute;
+   top: 0px ;  /* top / bottom*/
+   left:0px ;  /* left/right  */ 
+   width: 500px; 
+   height: auto;
+   background-color: rgba(32, 54, 70, 0.6);
+   color: var(--color2);
+   text-align: center;
+   font-size: 33px;
+   font-weight: 600;
+   box-sizing: border-box;
+   padding: 30px;
+}
+
+
+.scroll-up {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 50%; /* 200px 200px 200px 200px; */
+    box-shadow: 0 15px 20px 0 rgba(32, 54, 70, 0.4);
+    transition: all 0.4s ease-in-out;
+
+    /* Posición del botón respecto al viewport */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* Botón scroll-up */
+.scroll-up {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 50%; /* 200px 200px 200px 200px; */
+    box-shadow: 0 15px 20px 0 rgba(32, 54, 70, 0.4);
+    transition: all 0.4s ease-in-out;
+
+    /* Posición del botón respecto al viewport */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.scroll-up:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+    transform: scale(1.05) translateY(-5px);
+}
+
+
+/* Animación */
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2025-10-7 10:10:53
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+
+
+  @-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+
+
+  /* DISEÑO WEB RESPONSIVE: BREAKPOINTS */
+  
+/* Breakpoint para pantalla grande (large)
+   de hasta 1200px de ancho*/
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .padding-x2 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .col-30 {
+      max-width: 33%;
+    }
+
+    .col {
+      padding-right: 0px;
+    }
+}
+
+ 
+  /* Breakpoint para pantalla mediana (medium)
+   de hasta 992px de ancho*/
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 85%;
+    }
+
+    .video-caja-hijo {
+        /* Restablece su posicionamiento por defecto */
+        width: 100%;
+    }
+
+    .padding-x2 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .col-30 {
+      max-width: 33%;
+    }
+
+    .col {
+      padding-right: 0px;
+    }
+}
+
+
+/* Breakpoint para pantalla pequeña o table (small)
+   de hasta 768px de ancho*/
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 85%;
+    }
+
+    .video-caja-hijo {
+      position: static;
+      margin-top: -15px;
+      padding: 0px;
+    }
+
+    .container2 {
+      max-width: 70%;
+      padding: 20px 50px;
+    }
+
+    .col-50 {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+
+    .col {
+      flex-basis: 100%;
+    }
+
+    h3 {
+      padding-top: 10px;
+    }
+
+    p {
+      padding-bottom: 10px;
+    }
+
+    .padding-x10 {
+      margin-bottom: -100px;
+    }
+
+    .padding-1 {
+      margin-bottom: -200px;
+    }
+
+    /* Barra de menú responsive */
+    .menu-toggle {
+        /* Pone visible el botón Hamburguesa */
+        display: block;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--color3);
+
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 33%;
+
+        /* Ocultar el menu */
+        display: none;
+        /* opacity: 0; */
+    }
+
+    .nav-menu-link {
+        color: var(--color2);
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid var(--color2);
+    }
+
+
+
+    /* Clase que pone visible el nav-menu al hacer
+     clic en el botón hamburguesa. 
+     Se ejecutará desde javascript */
+    .nav-menu.show {
+        display: block;
+    }
+}
+
+/* Breakpoint para pantalla extra pequeña o celular (x-small)
+   de hasta 576px de ancho*/
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 85%;
+    }
+
+    body {
+        font-size: 0.9em;
+    }
+
+    h1, h2, h3, h4 {
+        text-align: center;
+        font-size: large;
+    }
+
+    .padding-xl {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .col-50 {
+      max-width: 90%;
+    }
+
+    .col-90 {
+      max-width: 90%;
+    }
+
+    .service .col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .video-caja-hijo {
+        font-size: 1.2em;
+    }
+
+    .topbar-main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
