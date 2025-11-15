@@ -656,6 +656,56 @@ body {
     }
 }
 
+/* Estilos para tarjetas de redes sociales */
+.social-cards {
+    display: flex;
+    gap: 0;
+    margin: 40px 0;
+    border: 3px solid #20B2AA;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.social-card {
+    flex: 1;
+    background-color: #20B2AA;
+    color: white;
+    text-decoration: none;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.social-card:last-child {
+    border-right: none;
+}
+
+.social-card:hover {
+    background-color: #1a9a94;
+    transform: translateY(-2px);
+}
+
+.social-card i {
+    font-size: 2.5rem;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .social-cards {
+        flex-direction: column;
+    }
+    
+    .social-card {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .social-card:last-child {
+        border-bottom: none;
+    }
+}
+
 
 
 
